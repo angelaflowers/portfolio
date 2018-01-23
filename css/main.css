@@ -1,0 +1,672 @@
+/***** BASE STYLES *****/
+@font-face {
+font-family: 'BrandonBold';
+src: url(fonts/brandon-bld.otf);
+}
+@font-face {
+font-family: 'BrandonLight';
+src: url(fonts/brandon-light.otf);
+}
+@font-face {
+font-family: 'BrandonMed';
+src: url(fonts/brandon-med.otf);
+}
+@font-face {
+font-family: 'BrandonReg';
+src: url(fonts/brandon-reg.otf);
+}
+
+@font-face {
+    font-family: 'Liorah BT';
+    src: url(fonts/liorahbt.ttf); 
+	font-weight: regular;
+}
+@font-face {
+    font-family: 'Liorah BT';
+    src: url('liorahbt.ttf') format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'acumin-pro-extra-condensed';
+	src: url('fonts/acumin-pro-extra-condensed.otf') format('opentype');
+}
+body {
+    font-family: 'BrandonLight';
+    font-size: 22px;
+    color: #000000;
+    margin: 0 auto;
+}
+.button:focus {
+	outline-color: #ffffff;
+}
+
+/***** GRID *****/
+.full-width {
+    width: 100%;
+}
+.half-width {
+    width: 50%;
+    float: left;
+}
+.threequarter-width {
+	width: 65%;
+	float: left;
+}
+.quarter-width {
+	width: 35%;
+}
+#nav-bar { 
+    height: 84px;
+    margin: 0 80px 0px 73px;
+    max-width: 1200px;
+}
+#hero {
+    height: 500px;
+}
+#featured-work {
+    height: 910px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+#clients-contact {
+    height: 500px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+#footer {
+    height: 140px;
+}
+#banner {
+    height: 150px;
+}
+#portfolio {
+    height: 1475px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+#cta {
+    height: 50px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+#about {
+	height: 700px;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+#services {
+	height: 450px;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+#blog { 
+	height: 650px;
+	max-width: 1200px;
+}
+#connect {
+	height: 1050px;
+	max-width: 1100px;
+}
+
+/***** HEADER- NAV BAR *****/
+#favicon {
+    height: 20px;
+    width: 20px;
+}
+
+/***** HEADER- NAV BAR *****/
+nav {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    color: #43434E;
+    font-size: 12px;
+    font-family: 'BrandonReg';
+    font-style: regular;
+	letter-spacing: 1px;
+    padding-left: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+li a {
+	text-decoration: none;
+	color: #43434E;
+}
+li a:hover {
+    color: #fda595;
+}
+nav ul li:visited {
+    color: #fda595;
+}
+#nav-bar .button {
+    text-transform: uppercase;
+    background: none;
+    border: 1.5px solid #fda595;
+    border-radius: 0px;
+    color: #fda595;
+    display: inline-block;
+    margin-right: 0px;
+    width: 115px;
+	height: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font-family: 'BrandonMed';
+}
+#logo {
+    float: left;
+    height: 70px;
+    width: 70px;
+	padding-top: 8px;
+}
+h5 {
+	font-family: 'Liorah BT';
+	float: left;
+	font-weight: normal;
+    font-style: normal;
+	font-size: 30px;
+	text-transform: lowercase;
+	letter-spacing: 1px;
+	padding-top: 0px;
+	margin-top: 20px;
+}
+
+/***** HEADER- HERO SECTION *****/
+#hero {
+    background: url('../img/hero-image.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+h1 {
+    font-family: 'Liorah BT';
+	font-weight: normal;
+    font-style: normal;
+    font-size: 70px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: #43434E;
+    padding-top: 100px;
+    padding-bottom: 5px;
+    margin: 0px;
+    text-align: center;
+    text-transform: lowercase;
+}
+h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #43434E;
+    margin-top: 0px;
+    text-align: center;
+	text-transform: uppercase;
+}
+#hero .button {
+    text-transform: uppercase;
+    background-color: #fda595; 
+    border: none;
+    border-radius: 0px;
+    color: #ffffff;
+    width: 115px;
+	height: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    text-align: center;
+    text-decoration: none;
+	font-size: 12px;
+    font-family: 'BrandonMed';
+	font-style: normal;
+}
+#hero a {
+	text-decoration: none;
+}
+/*
+#arrow {
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    opacity: 0.9;
+    height: 30px;
+    width: 30px;
+}
+*/
+/***** FEATURED WORK *****/
+#featured-work {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+#sample-one, #sample-two, #sample-three, #sample-four {
+    height: 90%;
+    width: 90%;    
+}
+#sample-three, #sample-four {
+    padding-top: 60px;
+}
+#featured-work h3 {
+    color: #fda595;
+    font-family: 'Liorah BT';
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    text-align: left;
+    text-transform: lowercase;
+}
+#featured-work h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+    color: #43434e;
+    font-size: 30px;
+	letter-spacing: 2px;
+    padding-top: 15px;
+    margin: 0px;
+    text-align: inherit;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+#work, a {
+	text-decoration: none;
+}
+
+/***** CLIENTS-CONTACT *****/
+#testimony-one, #testimony-two {
+    float: left;
+    height: 10%;
+    width: 10%;
+    margin-right: 20px;
+}
+#clients-contact p {
+    font-weight: 300;
+    padding-left: 5px;
+}
+#clients-contact h3 {
+    color: #fda595;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-style: 300;
+	font-weight: 300;
+    font-size: 30px;
+	letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.form-section {
+    margin-left: 100px;
+    font-weight: 300;
+    font-style: 300;
+}
+#email {
+    width: 100%;
+    margin-bottom: 40px;
+}
+#text  {
+    width: 100%; 
+    padding-bottom: 80px;
+}
+.submit-button {
+   	text-align: center;
+}
+#submit {
+    text-transform: uppercase;
+    background: none;
+    border: 1.5px solid #fda595;
+    border-radius: 0px;
+    color: #fda595;
+    display: inline-block;
+    margin-right: 0px;
+	margin-bottom: 25px;
+    letter-spacing: 2px;
+	width: 115px;
+	height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'BrandonMed';
+}
+
+/***** FOOTER *****/
+#footer {
+	clear: both;
+    max-width: 100%;
+    background: #F5F5F5;
+    font-weight: 300;
+    font-style: 300;
+	padding: 0px;
+}
+
+#footer ul {
+    text-decoration: none;
+    text-align: center;
+	padding-left: 0px;
+	margin-bottom: 10px;
+	width: inherit;
+}
+#footer ul li {
+    display: inline-block;
+    text-align: center;
+	margin: 0px -15px;
+	padding-top: 30px;
+}
+#footer ul li img {
+    height: 40%;
+    width: 40%;
+}
+#phone a {
+    text-decoration: none;
+    color: #43434E;
+    font-size: 22px;
+}
+#phone {
+	text-align: center;
+    width: inherit;
+}
+  
+/***** BANNER AREA *****/
+
+#banner {
+    background: #FFF2EA;
+    text-align: left;
+	margin: 0px;
+}
+#banner h5 {
+    font-family: 'Liorah BT';
+    font-size: 40px;
+    color: #43434e;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    margin-top: 42px;
+    margin-left: 90px;
+    padding-bottom: 30px;
+}
+
+/***** WORK PAGE *****/
+
+#work-page {
+	color: #fda595;
+}
+#portfolio {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#portfolio-one, #portfolio-three, #portfolio-four, #portfolio-five {
+    height: 90%;
+    width: 90%;    
+}
+#portfolio-two {
+	border: 1px solid #D4D4D4;
+	height: 89.3%;
+    width: 89.3%; 
+}
+#portfolio-six {
+	height: 90%;
+    width: 90.3%; 
+}
+#portfolio .left-portfolio {
+	margin-right: 20px;
+}
+#portfolio .right-portfolio {
+	margin-left: 20px;
+}
+/****REVISIT PADDING BETWEEN WORK
+#portfolio-one, #portfolio-three, #portfolio-five {
+    padding-right: 50px;
+}
+#portfolio-two, #portfolio-four, #portfolio-six {
+    padding-left: 50px;
+}
+****/
+#portfolio-three, #portfolio-four, #portfolio-five, #portfolio-six {
+    padding-top: 50px;
+}
+h3 {
+    color: #fda595;
+    font-family: 'Liorah BT';
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    text-align: left;
+    text-transform: lowercase;
+}
+#portfolio h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-style: normal;
+    color: #43434e;
+    font-size: 30px;
+    padding-top: 15px;
+    margin: 0px;
+    text-align: inherit;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+#portfolio p {
+	font-weight: 300;
+    margin: 0px;
+}
+#portfolio a {
+	color: #fda595;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 400;
+	line-height: 70px;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+}
+#portfolio br {
+	line-height: 70px;
+}
+#cta {
+    text-align: center;
+	width: inherit;
+    margin-bottom: 60px;
+	margin-top: 0px;
+}
+#cta .button {
+    text-transform: uppercase;
+    background: none;
+    border: 1.5px solid #fda595;
+    border-radius: 0px;
+    color: #fda595;
+    display: inline-block;
+    width: 115px;
+	height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'BrandonMed';
+}
+#cta a:hover {
+    color: #fda595;
+}
+/***** ABOUT PAGE *****/
+#about-page {
+	color: #fda595;
+}
+#about .full-width {
+	float: left;
+}
+.left-whoiam {
+	margin-right: -200px;
+}
+#about h3 {
+    color: #fda595;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+    font-size: 30px;
+	letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#about p {
+	font-weight: 300;
+}
+.right-photo {
+	float: right;
+}
+#about-photo {
+	height: 60%;
+	width: 60%;
+	padding-left: 115px;
+	padding-top: 60px;
+}
+.work-button {
+	text-align: center;
+}
+#about .button {
+	float: right;
+    text-transform: uppercase;
+    background: none;
+    border: 1.5px solid #fda595;
+    border-radius: 0px;
+    color: #fda595;
+    width: 115px;
+	height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'BrandonMed';
+	margin-top: 40px;
+	margin-right: 95px;
+}
+.contact-button {
+	clear: both;
+	padding-top: 90px;
+	font-family: 'BrandonMed';
+}
+
+/***** SERVICES PAGE *****/
+
+#services-page {
+	color: #fda595;
+}
+#services {
+	padding-right: 0px;
+	margin-top: 55px;
+	text-align: center;
+}
+.create, .build, .promote, .optimize {
+	display: inline-block;
+	text-align: center;
+	padding: 40px;
+}
+#services h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-style: normal;
+    color: #43434e;
+    font-size: 30px;
+    padding-top: 15px;
+    margin: 0px;
+    text-align: inherit;
+	text-transform: uppercase;
+}
+#services li {
+	text-align: center;
+	display: block;
+	font-weight: 300;
+}
+#services ul {
+	text-align: center;
+	padding-left: 0px;
+}
+.create li {
+	text-decoration: none;
+}
+.build li {
+	text-decoration: none;
+}
+.promote li {
+	text-decoration: none;
+}
+.optimize li {
+	text-decoration: none;
+}
+
+/***** BLOG PAGE *****/
+
+#blog-page {
+	color: #fda595;
+}
+#blog .full-width {
+	margin-top: 60px;
+	width: 100%;
+	text-align: center;
+}
+#blog-pic {
+	height: 70%;
+	width: 70%;
+}
+/***** CONNECT PAGE *****/
+
+#connect-page {
+	color: #fda595;
+}
+#connect {
+	margin-left: 220px;
+	margin-right: 300px;
+	text-align: left;
+}
+#connect h3 {
+	text-align: left;
+	padding-left: 0px;
+	padding-top: 24px;
+	color: #fda595;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+    font-size: 30px;
+	letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#connect-form, #connect-info-form {
+	margin-left: 80px;
+	font-weight: 300;
+}
+#name, #connect-email, #url, #info, #help {
+	width: 100%;
+	margin-bottom: 20px;
+}
+#connect-phone {
+	width: 100%;
+}
+#help {
+	padding-bottom: 90px;
+}
+#connect .submit-button {
+   	text-align: center;
+	margin-left: 80px;
+}
+#submit {
+    text-transform: uppercase;
+    background: none;
+    border: 1.5px solid #fda595;
+    border-radius: 0px;
+    color: #fda595;
+    display: inline-block;
+    margin-right: 0px;
+	margin-bottom: 25px;
+    letter-spacing: 2px;
+	width: 115px;
+	height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
